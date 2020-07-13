@@ -45,7 +45,7 @@
             <ImageView
                 android:layout_width="80pt"
                 android:layout_height="80pt"
-                android:src="@drawable/planbal"
+                android:src="@drawable/houseofplesure"
                 android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="wrap_content"
