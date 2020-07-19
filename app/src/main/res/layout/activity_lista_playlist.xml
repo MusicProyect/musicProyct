@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    tools:context=".ListaPlaylist"
     android:orientation="vertical"
-    tools:context=".Album">
+    android:background="#000000">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +20,7 @@
             android:textSize="15pt"
             android:layout_marginTop="40pt"
             android:textColor="#ffffff"
-            android:text="House of Pleasure"
+            android:text="Reggaeton"
             android:layout_marginBottom="12pt"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,11 +59,27 @@
                     android:layout_marginTop="5pt"
                     android:background="@drawable/descargar"/>
 
-                <Button
-                    android:layout_width="20pt"
-                    android:layout_height="20pt"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
                     android:layout_marginTop="13pt"
-                    android:background="@drawable/add"/>
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:text="20">
+
+                    </TextView>
+
+                    <Button
+                        android:layout_width="20pt"
+                        android:layout_height="20pt"
+                        android:background="@drawable/music"/>
+                </LinearLayout>
+
 
             </LinearLayout>
         </LinearLayout>
@@ -73,7 +90,7 @@
             android:textSize="15pt"
             android:layout_marginTop="7pt"
             android:textColor="#ffffff"
-            android:text="Plan B"/>
+            android:text="Reproducciones"/>
         <TextView android:id="@+id/anio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,14 +98,15 @@
             android:textSize="9pt"
             android:layout_marginTop="1pt"
             android:textColor="#ffffff"
-            android:text="2010"/>
+            android:text="20.101.640"/>
 
 
     </LinearLayout>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lista"
+        android:id="@+id/lista2"
         android:layout_margin="5dp"></ListView>
+
 
 </LinearLayout>
