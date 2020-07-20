@@ -20,8 +20,8 @@ public class ListaUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_lista_usuario);
         list = findViewById(R.id.lista3);
         List<ListaUsuarioMo> arrayList = new ArrayList<ListaUsuarioMo>();
-        ListaUsuarioMo mu1 = new ListaUsuarioMo("Canciones que te gustan", "11 canciones", R.drawable.musi1);
-        ListaUsuarioMo mu2 = new ListaUsuarioMo("Fiesta", "23 canciones", R.drawable.musi2);
+        ListaUsuarioMo mu1 = new ListaUsuarioMo("Crear playlist", "", R.drawable.addlist);
+        ListaUsuarioMo mu2 = new ListaUsuarioMo("Canciones que te gustan", "11 canciones", R.drawable.musi2);
         ListaUsuarioMo mu3= new ListaUsuarioMo("Relax", "15 canciones", R.drawable.musi3);
         ListaUsuarioMo mu4= new ListaUsuarioMo("Cumbias", "13 canciones", R.drawable.musi4);
         ListaUsuarioMo mu5 = new ListaUsuarioMo("Canciones que te gustan", "11 canciones", R.drawable.musi1);
