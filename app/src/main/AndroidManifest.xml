@@ -8,22 +8,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MostrarListUsuario"></activity>
-        <activity android:name=".ListaUsuario">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Reproductor"></activity>
+        <activity android:name=".MostrarMusicaHome" />
+        <activity android:name=".Busqueda" />
+        <activity android:name=".Home" />
+        <activity android:name=".MostrarListUsuario" />
+        <activity android:name=".ListaUsuario" />
+        <activity android:name=".MostrarListPlaylist" />
+        <activity android:name=".ListaPlaylist" />
+        <activity android:name=".MostrarMusicasAlbum" />
+        <activity android:name=".Album" />
+        <activity android:name=".Configuracion" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MostrarListPlaylist" />
-        <activity android:name=".ListaPlaylist" />
-        <activity android:name=".MostrarMusicasAlbum" />
-        <activity android:name=".Album">
-        </activity>
-        <activity android:name=".Configuracion" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -6,20 +6,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Configuracion extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class Busqueda extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuracion);
+        setContentView(R.layout.activity_busqueda);
         bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -39,5 +39,11 @@ public class Configuracion extends AppCompatActivity implements BottomNavigation
                 return true;
         }
         return false;
+
+    }
+    public void irConfiguracion(View v){
+        Intent homeActivity = new Intent(getApplicationContext(), Configuracion.class);
+        startActivity(homeActivity);
+
     }
 }
